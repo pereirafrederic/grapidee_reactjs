@@ -1,0 +1,51 @@
+.IdeeOrpheline {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  background-color: grey;
+  opacity: 1;
+}
+
+.IdeeOrpheline-Entete {
+  display: flex;
+  align-self: center;
+}
+
+.IdeeOrpheline-horizontale {
+  flex-direction: row;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  align-items: center;
+  justify-content: center;
+}
+.IdeeOrpheline-verticale {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.IdeeOrpheline-idee {
+  margin: 4px;
+  border: 2px solid;
+  border-radius: 25px;
+  min-width: 250px;
+}
+
+.IdeeOrpheline-actions-verticale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border: thick double lightgray;
+}
+
+.IdeeOrpheline-actions-horizontale {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  flex-grow: 1;
+  align-self: flex-end;
+}

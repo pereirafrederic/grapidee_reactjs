@@ -1,0 +1,36 @@
+
+.bulle_projet, .bulle_sousprojet{
+  border-radius: 40px;
+  min-width: 80px;
+  min-height: 80px;
+  background-color: red;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+}
+.projets{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+
+.create{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+.titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 3;
+}

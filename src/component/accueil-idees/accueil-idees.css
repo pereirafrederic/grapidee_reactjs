@@ -1,0 +1,14 @@
+.Accueil--idees {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.Accueil--maitres {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+Icon:hover {
+  box-shadow: 0 0 0 6px #000, 0 0 0 7px #ffffff;
+}

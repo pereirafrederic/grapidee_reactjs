@@ -1,0 +1,52 @@
+.domaine_verticale{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  background-color: yellow;
+  flex: 1 1 auto;
+}
+.domaine_verticale_titre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex: 2 1 auto;
+}
+
+.domaine_verticale_grappe_verticale{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex: 20 1 auto;
+}
+.domaine_horizontale{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  background-color: yellow;
+  flex: 1 1 auto;
+}
+.domaine_horizontale_titre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex: 2 1 auto;
+}
+
+.domaine_horizontale_grappe_verticale{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex: 20 1 auto;
+}

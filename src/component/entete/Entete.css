@@ -1,0 +1,41 @@
+.Entete-horizontale {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  align-items: center;
+  justify-content: center;
+}
+.Entete-verticale {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nom-horizontale {
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.nom-verticale {
+  padding-top: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description-horizontale {
+  display: flex;
+  padding: 6px;
+}
+
+.description-verticale {
+  display: flex;
+  padding: 6px;
+}

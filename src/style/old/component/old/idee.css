@@ -1,0 +1,53 @@
+.idee_verticale{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 10;
+}
+.idee_verticale_titre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 3;
+}
+
+.idee_verticale_ideeesclave_verticale{
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-content: center;
+  background-color: pink;
+  flex-grow: 10;
+}
+
+.idee_horizontale{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 10;
+}
+.idee_horizontale_titre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 3;
+}
+
+.idee_horizontale_ideeesclave{
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-content: center;
+  background-color: pink;
+  flex-grow: 10;
+}

@@ -1,0 +1,22 @@
+.navBar{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+    justify-content: space-between;
+  align-items: stretch;
+  background-color: #333399;
+  color:  #ececf9;
+}
+
+.accueil{
+  display: flex;
+}
+
+.deconnection{
+  display: flex;
+}
+
+.compte{
+  display: flex;
+}

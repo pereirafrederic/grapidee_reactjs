@@ -1,0 +1,49 @@
+.grappe{
+padding: 10px;
+margin: 5px;
+}
+
+.entete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.grappes_enfants{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+
+}
+
+.grappe_enfant{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+
+}
+
+.grappe_idees{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.grappe_grappe_idees{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.idee{
+    margin-bottom: 5px;
+}

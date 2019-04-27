@@ -1,0 +1,48 @@
+
+.grappe_verticale{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  background-color: pink;
+  flex: 20 1 auto;
+}
+.grappe_verticale_titre{
+  font-size: 16px;
+    display: flex;
+      flex: 10 1 auto;
+      align-items: center;
+      justify-content: space-around;
+}
+.grappe_verticale_idee_horizontale{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: gray;
+  flex: 10 1 auto;
+}
+
+.grappe_horizontale{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  background-color: pink;
+  flex: 20 1 auto;
+}
+.grappe_horizontale_titre{
+  font-size: 16px;
+    display: flex;
+      flex-grow: 10;
+      align-items: center;
+      justify-content: space-around;
+}
+.grappe_horizontale_idee_verticale{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: gray;
+  flex: 10 1 auto;
+}

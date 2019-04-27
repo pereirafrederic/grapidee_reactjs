@@ -1,0 +1,88 @@
+
+.maitres{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    border: 2px solid;
+}
+
+.orphelines{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    border: 2px solid;
+}
+
+.arbre_idee{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    border: 2px solid;
+}
+.idees{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    border: 2px solid;
+}
+.grappe_idee{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    border: 2px solid;
+}
+.line_idee{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+.idee{
+    display: flex;
+    min-width: 200px;
+    min-height: 200px;
+    border: 2px solid;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.mapIdees{
+    display: flex;
+    min-width: 200px;
+    min-height: 200px;
+    border: 2px solid;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+.nom{
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px;
+    font-weight: bold;
+
+}
+
+.description{
+    flex-grow: 3;
+    display: flex;
+    padding: 6px;
+}
+
+.actions{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
