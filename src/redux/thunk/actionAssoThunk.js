@@ -24,7 +24,7 @@ export function thunkActionPostAssoIdee(assoIdee, method) {
       dispatch(deleteAssoIdee(START, null));
       url = "/desassocier/idee";
     }
-    return fetch("http://localhost:9000/grapidee" + url, {
+    return fetch(configuration.config.url  + url, {
       headers: headers,
       method: POST,
       body: JSON.stringify(assoIdee)
@@ -48,7 +48,7 @@ export function thunkActionAssoIdeeGrappe(assoIdeeGrappe, method) {
   return dispatch => {
     if (method === POST) dispatch(postAssoIdeeGrappe(START, null));
     else if (method === DELETE) dispatch(deleteAssoIdeeGrappe(START, null));
-    return fetch("http://localhost:9000/grapidee/idee", {
+    return fetch(configuration.config.url +"/idee", {
       headers: headers,
       method: method,
       body: JSON.stringify(assoIdeeGrappe)
@@ -79,7 +79,7 @@ export function thunkActionAssoGrappe(assoGrappe, method) {
       dispatch(deleteAssoGrappe(START, null));
       url = "desassocier/grappe";
     }
-    return fetch("http://localhost:9000/grapidee" + url, {
+    return fetch(configuration.config.url  + url, {
       headers: headers,
       method: POST,
       body: JSON.stringify(assoGrappe)

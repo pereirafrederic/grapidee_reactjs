@@ -1,5 +1,8 @@
+import * as configuration from "../configuration";
+
 export const loadMaitres = here => {
-  fetch("http://localhost:9000/grapidee/idee/maitres")
+  configuration.config.url
+  fetch(configuration.config.url +'/idee/maitres')
     .then(Response => Response.json())
     .then(data => here.setState({ idees: data }));
 };
@@ -17,7 +20,7 @@ export const lierIdee = here => {
   console.log("lier", here.state.master.nom, here.state.esclave);
   here.state.esclave.map(esclave => {
     fetch(
-      "http://localhost:9000/grapidee/associer/idee/" +
+      configuration.config.url +'/associer/idee/' +
         here.state.master.id +
         "/" +
         esclave.id,
@@ -40,7 +43,7 @@ export const delierIdee = here => {
   console.log("delier", here.state.master.nom, here.state.esclave);
   here.state.esclave.map(esclave => {
     fetch(
-      "http://localhost:9000/grapidee/desassocier/idee/" +
+      configuration.config.url +'/desassocier/idee/' +
         here.state.master.id +
         "/" +
         esclave.id,
@@ -60,7 +63,7 @@ export const delierIdee = here => {
 };
 
 export const loadGrappes = here => {
-  fetch("http://localhost:9000/grapidee/grappe")
+  fetch(configuration.config.url +'/grappe')
     .then(Response => Response.json())
     .then(data => {
       console.log(data);
@@ -83,7 +86,7 @@ export const lierGrappe = here => {
   console.log("lier", here.state.master.nom, here.state.esclave);
   here.state.esclave.map(esclave => {
     fetch(
-      "http://localhost:9000/grapidee/associer/grappe/" +
+      configuration.config.url +'/associer/grappe/' +
         here.state.master.id +
         "/" +
         esclave.id,
@@ -104,7 +107,7 @@ export const lierGrappe = here => {
 
 export const delierGrappe = (here, grappe) => {
   console.log("delier", grappe.nom);
-  fetch("http://localhost:9000/grapidee/desassocier/grappe/" + grappe.id, {
+  fetch(configuration.config.url +'/desassocier/grappe/' + grappe.id, {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json"
