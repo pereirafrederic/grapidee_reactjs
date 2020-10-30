@@ -8,10 +8,11 @@ class Entete extends React.Component {
 
     return (
       <div className={`Entete-${mode}`}>
-        <div className={`nom-${mode}`}>
-          <Link to={`/${link}/${id}`}>{`${id} - ${nom}`}</Link>
+        <div className={`nom-${mode} tooltipEntete `}>
+          <span className="tooltipEnteteId">{id}</span>
+          <Link to={`/${link}/${id}`}>{nom}</Link>
+          <span className="tooltipEnteteDescription">{description}</span>
         </div>
-        <div className={`description-${mode}`}>{description}</div>
       </div>
     );
   }

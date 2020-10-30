@@ -100,7 +100,7 @@ class GrappeEnfant extends React.Component {
           </div>
         )}
         {grappe.grappeEnfants && grappe.grappeEnfants.length > 0 && (
-          <div className={`primary-grappe-grappeEnfants ${modeGrappeEnfants}`}>
+          <div className={`primary-grappe-grappeEnfants verticale`}>
             {grappe.grappeEnfants.map(grappe => (
               <Grappe
                 grappe={grappe}

@@ -76,7 +76,7 @@ class IdeeEnfant extends React.Component {
     const modeOrganisationFilles = modeOrganisation;
 
     return (
-      <div className={`primary-Idee borderIdee ${mode}`} key={idee.id}>
+      <div className={`primary-idee borderIdee ${mode}`} key={idee.id}>
         {mode == "horizontale" && (
           <div className="verticale">
             <Entete
@@ -99,11 +99,11 @@ class IdeeEnfant extends React.Component {
           />
         )}
         {idee.organisation && (
-          <div className={`primary-Idee-organisation ${modeOrganisation}`}>
+          <div className={`primary-idee-organisation verticale`}>
             {idee.organisation.ideeEsclaves &&
               idee.organisation.ideeEsclaves.length > 0 && (
                 <div
-                  className={`primary-Idee-ideeEsclaves ${modeIdeeEsclaves}`}
+                  className={`primary-idee-ideeEsclaves ${modeIdeeEsclaves}`}
                 >
                   {idee.organisation.ideeEsclaves.map(idee => (
                     <Idee idee={idee} mode={modeIdeeEsclaves} />
@@ -112,9 +112,7 @@ class IdeeEnfant extends React.Component {
               )}
             {idee.organisation.organisationFilles &&
               idee.organisation.organisationFilles.length > 0 && (
-                <div
-                  className={`primary-Idee-organisationFilles ${modeOrganisationFilles}`}
-                >
+                <div className={`primary-idee-organisationFilles verticale`}>
                   {idee.organisation.organisationFilles.map(grappe => (
                     <Organisation
                       grappe={grappe}
